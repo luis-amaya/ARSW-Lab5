@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <title>Blueprints</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/webjars/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/webjars/bootstrap/4.1.2/css/bootstrap.min.css" />
+</head>
+
+<body onload="pointevent.init()">
+    <div class="grid">
+        <div class="inicio">Blueprints</div>
+        <div class="LeftContet">
+            <a>AUTHOR :</a>
+
+            <input type="text" id="autor">
+            <button type="button" onclick="app.plansAuthor()">Get Blueprint</button>
+
+            </br>
+            </br>
+
+            <body>
+                <label id="autorLabel">autor</label>
+                <label>'s blueprints :</label>
+                <table id="tabla">
+                    <thead>
+                        <tr>
+                            <th>Blueprint name</th>
+                            <th>Number of points</th>
+                            <th>Open</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="nombreActor">Peter Parker</td>
+                            <td id="puntos">peterparker@mail.com</td>
+                            <td type="button" class="button" value=nombreActor>Open</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </body>
+
+</html>
